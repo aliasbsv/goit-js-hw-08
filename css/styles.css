@@ -1,0 +1,35 @@
+.container {
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-left: 156px;
+  padding-right: 156px;
+  padding-bottom: 24px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: calc((100% - 2 * 24px) / 3);
+  box-sizing: border-box;
+}
+
+.gallery-item:not(:nth-child(3n)) {
+  margin-right: 24px;
+}
+
+.gallery-item:nth-child(3n):not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
